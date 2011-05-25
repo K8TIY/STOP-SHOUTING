@@ -15,6 +15,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 #import <Carbon/Carbon.h>
 #import "AppController.h"
+#import "Onizuka.h"
 
 @implementation SSWindow
 -(id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)style
@@ -57,6 +58,7 @@ static CGEventRef local_TapCallback(CGEventTapProxy proxy, CGEventType type,
   [icon release];
   NSRect inhabitable = [[NSScreen mainScreen] visibleFrame];
   [_ssWindow setFrame:inhabitable display:YES];
+  [[Onizuka sharedOnizuka] localizeMenu:_menu];
   [_status setEnabled:YES];
   [self _setEnabled:YES];
   _tap = CGEventTapCreate(kCGSessionEventTap, kCGTailAppendEventTap, kCGEventTapOptionListenOnly,

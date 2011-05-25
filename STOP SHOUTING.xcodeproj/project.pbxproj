@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		32841169138D7279002D718D /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97319FDCFA39411CA2CEA /* MainMenu.nib */; };
+		32A3F3F4138D73D400D38883 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32A3F3F1138D73D400D38883 /* Localizable.strings */; };
+		32A3F425138D7B6E00D38883 /* Onizuka.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A3F423138D7B6E00D38883 /* Onizuka.m */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		A628E7CA0EFB750F003168DE /* caps.tif in Resources */ = {isa = PBXBuildFile; fileRef = A628E7C90EFB750F003168DE /* caps.tif */; };
@@ -20,13 +21,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32109C9413662ADD00A93E21 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		32A3F3F2138D73D400D38883 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32A3F3F3138D73D400D38883 /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32A3F423138D7B6E00D38883 /* Onizuka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Onizuka.m; path = Onizuka/Onizuka.m; sourceTree = "<group>"; };
+		32A3F424138D7B6E00D38883 /* Onizuka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Onizuka.h; path = Onizuka/Onizuka.h; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* STOP SHOUTING_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STOP SHOUTING_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* STOP SHOUTING-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "STOP SHOUTING-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* STOP SHOUTING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STOP SHOUTING.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +87,9 @@
 			children = (
 				A6C660AC09E46F6500397C58 /* AppController.h */,
 				A6C660AD09E46F6500397C58 /* AppController.m */,
-				32CA4F630368D1EE00C91783 /* STOP SHOUTING_Prefix.pch */,
+				32A3F414138D7B5700D38883 /* Onizuka */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				32CA4F630368D1EE00C91783 /* STOP SHOUTING_Prefix.pch */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				32109C9413662ADD00A93E21 /* README.txt */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -101,8 +106,8 @@
 				A628E7C90EFB750F003168DE /* caps.tif */,
 				A628E7CB0EFB7513003168DE /* caps_alt.tif */,
 				8D1107310486CEB800E47090 /* STOP SHOUTING-Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				32A3F3F1138D73D400D38883 /* Localizable.strings */,
+				29B97319FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -114,6 +119,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32A3F414138D7B5700D38883 /* Onizuka */ = {
+			isa = PBXGroup;
+			children = (
+				32A3F424138D7B6E00D38883 /* Onizuka.h */,
+				32A3F423138D7B6E00D38883 /* Onizuka.m */,
+			);
+			name = Onizuka;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +159,14 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "STOP SHOUTING" */;
 			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ja,
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* DiscMenu */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,12 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				32841169138D7279002D718D /* MainMenu.nib in Resources */,
 				A6E0C3860EF2EF2D007D13EA /* Arrow.pdf in Resources */,
 				A6EA4D750EFB34A1007B42F5 /* STOP.icns in Resources */,
 				A628E7CA0EFB750F003168DE /* caps.tif in Resources */,
 				A628E7CC0EFB7513003168DE /* caps_alt.tif in Resources */,
+				32A3F3F4138D73D400D38883 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,26 +199,20 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				A6A7E0AB0ED017C300B30177 /* AppController.m in Sources */,
+				32A3F425138D7B6E00D38883 /* Onizuka.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		32A3F3F1138D73D400D38883 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				32A3F3F2138D73D400D38883 /* en */,
+				32A3F3F3138D73D400D38883 /* ja */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
-			);
-			name = MainMenu.nib;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
