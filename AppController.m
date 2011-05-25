@@ -21,14 +21,14 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
      backing:(NSBackingStoreType)buffering defer:(BOOL)flag
 {
   #pragma unused (style,buffering,flag)
-  NSWindow* result = [super initWithContentRect:contentRect
-                            styleMask:NSBorderlessWindowMask
-                            backing:NSBackingStoreBuffered defer:NO];
-  [result setBackgroundColor:[NSColor clearColor]];
-  [result setLevel:kCGMaximumWindowLevel];
-  [result setAlphaValue:0.25f];
-  [result setOpaque:NO];
-  return result;
+  self = [super initWithContentRect:contentRect
+                styleMask:NSBorderlessWindowMask
+                backing:NSBackingStoreBuffered defer:NO];
+  [self setBackgroundColor:[NSColor clearColor]];
+  [self setLevel:kCGMaximumWindowLevel];
+  [self setAlphaValue:0.25f];
+  [self setOpaque:NO];
+  return self;
 }
 -(BOOL)canBecomeKeyWindow {return NO;}
 -(BOOL)canBecomeMainWindow {return NO;}
@@ -59,7 +59,7 @@ static CGEventRef local_TapCallback(CGEventTapProxy proxy, CGEventType type,
   [_ssWindow setFrame:inhabitable display:YES];
   [_status setEnabled:YES];
   [self _setEnabled:YES];
-  _tap = CGEventTapCreate(kCGHIDEventTap, kCGTailAppendEventTap, kCGEventTapOptionListenOnly,
+  _tap = CGEventTapCreate(kCGSessionEventTap, kCGTailAppendEventTap, kCGEventTapOptionListenOnly,
                           CGEventMaskBit(kCGEventFlagsChanged), local_TapCallback, self);
   if (_tap)
   {
