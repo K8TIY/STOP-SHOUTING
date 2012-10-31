@@ -79,6 +79,7 @@ static CGEventRef local_TapCallback(CGEventTapProxy proxy, CGEventType type,
   CFRelease(_tap);
   [[NSStatusBar systemStatusBar] removeStatusItem:_status];
   [_status release];
+  _status = nil;
 }
 
 -(IBAction)toggle:(id)sender
