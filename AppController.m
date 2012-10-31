@@ -58,7 +58,9 @@ static CGEventRef local_TapCallback(CGEventTapProxy proxy, CGEventType type,
   [icon release];
   NSRect inhabitable = [[NSScreen mainScreen] visibleFrame];
   [_ssWindow setFrame:inhabitable display:YES];
-  [[Onizuka sharedOnizuka] localizeMenu:_menu];
+  Onizuka* oz = [Onizuka sharedOnizuka];
+  [oz localizeMenu:_menu];
+  [oz clearCache];
   [_status setEnabled:YES];
   [self _setEnabled:YES];
   _tap = CGEventTapCreate(kCGSessionEventTap, kCGTailAppendEventTap, kCGEventTapOptionListenOnly,
